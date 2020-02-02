@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../BayesianProbability/.idea/BayesianProbability.iml" filepath="$PROJECT_DIR$/../BayesianProbability/.idea/BayesianProbability.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../HandWrittenML/.idea/HandWrittenML.iml" filepath="$PROJECT_DIR$/../HandWrittenML/.idea/HandWrittenML.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../MiscML/.idea/MiscML.iml" filepath="$PROJECT_DIR$/../MiscML/.idea/MiscML.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../NeuralNetsML/.idea/NeuralNetsML.iml" filepath="$PROJECT_DIR$/../NeuralNetsML/.idea/NeuralNetsML.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Python.iml" filepath="$PROJECT_DIR$/.idea/Python.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../SupervisedML/.idea/SupervisedML.iml" filepath="$PROJECT_DIR$/../SupervisedML/.idea/SupervisedML.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../TensorFlowML/.idea/TensorFlowML.iml" filepath="$PROJECT_DIR$/../TensorFlowML/.idea/TensorFlowML.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../UnsupervisedML/.idea/UnsupervisedML.iml" filepath="$PROJECT_DIR$/../UnsupervisedML/.idea/UnsupervisedML.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../BayesianProbability" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../MiscML" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../NeuralNetsML" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../SupervisedML" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../TensorFlowML" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../UnsupervisedML" vcs="Git" />
+  </component>
+</project>

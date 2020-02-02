@@ -8,9 +8,9 @@ def random_password(passlen):
     uppercase = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
     number = '0123456789'
     punc ='!@#$%^&*()?'
-    r1 = random.randint(1,passlen-3)
-    r2 = random.randint(1,passlen-r1-2)
-    r3 = random.randint(1,passlen-r1-r2-1)
+    r1 = random.randint(1, passlen-3)
+    r2 = random.randint(1, passlen-r1-2)
+    r3 = random.randint(1, passlen-r1-r2-1)
     r4 = passlen-r1-r2-r3
     a = random.sample(lowercase,r1)
     b = random.sample(uppercase, r2)
