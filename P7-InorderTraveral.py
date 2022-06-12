@@ -41,10 +41,12 @@ root.insert(42)
 print(root.inorderTraversal(root))
 
 # Kth Largest
-arr = [64, 34, 25, 12, 22, 11, 90]
+arr = [10, 14, 19, 27, 31, 35, 42]
 k = 3
 def kth_largest(arr, k):
     root = Node(arr[0])
     for el in arr[1:]:
         root.insert(el)
-    print(root.inorderTraversal)
+    print(root.inorderTraversal(root)[-k:])
+
+kth_largest(arr, k)
