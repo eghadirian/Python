@@ -25,7 +25,7 @@ def breadth_first_search(visited, graph, node):
 
 breadth_first_search(visited, graph, 'A')
 
-
+print('')
 visited = set()
 def depth_first_search(visited, graph, node):
     if node not in visited:

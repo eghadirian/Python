@@ -34,14 +34,14 @@ class Node():
         res = []
         if root:
             res.append(root.data)
-            res = res + self.preorder_traversal(root.left)
-            res = res + self.preorder_traversal(root.right)
+            res += self.preorder_traversal(root.left)
+            res += self.preorder_traversal(root.right)
         return res
     def postorder_traversal(self, root):
         res = []
         if root:
             res = self.postorder_traversal(root.left)
-            res = res + self.postorder_traversal(root.right)
+            res += self.postorder_traversal(root.right)
             res.append(root.data)
         return res
     def invert_tree(self, root):
