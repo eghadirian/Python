@@ -17,36 +17,33 @@ class Node():
                     self.right = Node(data)
         else:
             self.data = data
-    def PrintTree(self):
-        if self.left:
-            self.left.PrintTree()
-        print(self.data),
-        if self.right:
-            self.right.PrintTree()
-    def inorderTraversal(self, root):
-        res = []
-        if root:
-            res = self.inorderTraversal(root.left)
-            res.append(root.data)
-            res = res + self.inorderTraversal(root.right)
-        return res
 
-root = Node(27)
-root.insert(14)
-root.insert(35)
-root.insert(10)
-root.insert(19)
-root.insert(31)
-root.insert(42)
-print(root.inorderTraversal(root))
+def inorder_traversal(root):
+    res = []
+    if root:
+        res = inorder_traversal(root.left)
+        res.append(root)
+        res += inorder_traversal(root.right)
+    return res
 
-# Kth Largest
-arr = [10, 14, 19, 27, 31, 35, 42]
-k = 3
-def kth_largest(arr, k):
-    root = Node(arr[0])
-    for el in arr[1:]:
-        root.insert(el)
-    print(root.inorderTraversal(root)[-k:])
+def preorder_traversal(root):
+    res = []
+    if root:
+        res.append(root)
+        res += preorder_traversal(root.left)
+        res += preorder_traversal(root.right)
+    return res
 
-kth_largest(arr, k)
+def postorder_traversal(root):
+    res = []
+    if root:
+        res = postorder_traversal(root.left)
+        res += postorder_traversal(root.right)
+        res.append(root.data)
+    return res
+
+def inverse(root):
+    if root == None:
+        return
+    root.left, root.right = inverse(root.left), inverse(self.right)
+    return root
