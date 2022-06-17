@@ -112,7 +112,7 @@ def combinations(lst, n):
     if n == 0:
         return [[]]
     combs = []
-    for i in range(0, len(lst)):
+    for i in range(len(lst)):
         m = lst[i]
         remLst = lst[0:i] + lst[i + 1:]
         remainlst_combo = combinations(remLst, n-1)
