@@ -114,8 +114,25 @@ def combinations(lst, n):
     combs = []
     for i in range(len(lst)):
         m = lst[i]
-        remLst = lst[0:i] + lst[i + 1:]
+        remLst = lst[i + 1:] # + lst[0:i]
         remainlst_combo = combinations(remLst, n-1)
         for p in remainlst_combo:
              combs.append([m, *p])      
     return combs
+def get_all_subsets(lst):
+    res = []
+    for i in range(1, len(lst)+1):
+        res += combinations(lst, i)
+    return res
+        
+def maxSum(arr, k):
+    n = len(arr)
+    if n < k:
+        print("Invalid")
+        return -1
+    window_sum = sum(arr[:k])
+    max_sum = window_sum
+    for i in range(n - k):
+        window_sum = window_sum - arr[i] + arr[i + k]
+        max_sum = max(window_sum, max_sum)
+    return max_sum
